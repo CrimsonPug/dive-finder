@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/style.css">  
+        <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">      
+    </head>
+    <body>
+        
+          <nav>
+            <div class="row" id="navbar">
+
+            </div>
+          </nav>
+                <h1 class="text-center">Dive Finder</h1>
+                
+          
+    <div class"whole-container">
+        <div id="floating-panel">
+            <input id="address" type="textbox" placeholder="Search for...">
+            <input id="submit" type="button" value="Find Dive Spots!">
+        </div>
+        <div class="map-container">
+            <div id="map">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row topSite">
+                <h2 class="text-center">Popular Dive Sites</h2>
+                <div class="col-lg-4">
+                    
+                        <a class="dive-link" href="dive/tt0133093">
+                        <div class="small-container">
+                            <img src="img/kimbeBay.jpg">
+                        <h5 class="text-center">Kimbe Bay, Papua New Guinea</h5>
+                        </div>
+                        </a>
+                        
+                        <a class="dive-link" href="dive/tt1104001">
+                        <div class="small-container">
+                            <img src="img/dahab.jpg">
+                            <h5 class="text-center">Red Sea of Dahab, Egypt</h5>
+                        </div>
+                        </a>
+
+                        <a class="dive-link" href="dive/tt1375666">
+                        <div class="small-container">
+                            <img src="img/konaMantas.jpg">
+                            <h5 class="text-center">Kona Mantas, Hawaii</h5>
+                        </div>
+                        </a>
+                </div>
+                <div class="col-lg-4">
+                    <a class="dive-link" href="dive/tt1276104">
+                    <div class="small-container">
+                       <img src="img/sipadan2.jpg">
+                        <h5 class="text-center">Sipadan, Borneo</h5>
+                    </div>
+                    </a>
+
+                    <a class="dive-link" href="dive/tt0945513">
+                    <div class="small-container">
+                        <img src="img/darwin.jpg">
+                        <h5 class="text-center">Darwin’s Arch, Galapagos, Ecuador</h5>
+                    </div>
+                    </a>
+
+                    <a class="dive-link" href="dive/tt0151804">
+                    <div class="small-container">
+                        <img src="img/roatanIsland.jpg">
+                        <h5 class="text-center">Roatan, Bay Islands, Honduras</h5>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a class="dive-link" href="dive/tt0113243">
+                    <div class="small-container">
+                        <img src="img/sanFrancisco.jpg">
+                        <h5 class="text-center">The San Francisco Maru, Chuuk, Micronesia</h5>
+                    </div>
+                    </a>
+
+                    <a class="dive-link" href="dive/tt1285016">
+                    <div class="small-container">
+                        <img src="img/cocosIsland.jpg">
+                        <h5 class="text-center">Cocos Island, Costa Rica</h5>
+                    </div>
+                    </a>
+
+                    <a class="dive-link" href="dive/tt2084970">
+                    <div class="small-container">
+                        <img src="img/secretBay.jpg">
+                        <h5 class="text-center">Secret Bay, Anilao, Philippines</h5>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </body>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5YU9u8D8LQoHXqPDWO_FQD4QQ3ebEiTo&callback=initMap">
+            </script>
+    <script type="text/javascript" src="app.js"></script>
+    
+</html>

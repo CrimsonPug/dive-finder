@@ -1,0 +1,76 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+  width: 100%;
+  /*padding-left:20%;*/
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.map-container{
+  width:1000px;
+  height:600px;
+  margin-left:150px;
+}
+
+.map-container2{
+  width:800px;
+  height:600px;
+  margin-left:150px;
+}
+
+#floating-panel {
+  /*position: absolute;*/
+  top: 10px;
+  left: 25%;
+  z-index: 7;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+h1{
+  color:blue;
+}
+
+nav{
+  width:100%;
+  height:50px;
+  background-color: cornflowerblue;
+}
+
+h2{
+  margin-bottom: 50px;
+}
+
+
+
+img{
+  width:100%;
+  height:270px;
+  /*padding: 5px 20px 40px 20px;*/
+}
+
+.small-container{
+  padding: 5px 20px 40px 20px;
+}
+.small-container:hover {
+  background-color: #e9ebee;
+}
+
+#posters{
+  width: 300px !important;
+}
+
+.btn{
+  margin:35px
+}

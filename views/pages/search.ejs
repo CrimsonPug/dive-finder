@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/style.css"> 
+    </head>
+    <body>
+    
+        <h1 class="text-center">Search Results</h1>
+         <div class="container"> 
+            <div class="map-container2">
+                <div id="map"></div>
+            </div>
+
+                  <% for (let i=0; i<diveSites.length; i++){ %>
+
+                <a class="dive-link" href="dive/<%=diveSites[i].id %>">
+                    <div class="dive dive-list-item">    
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <%= diveSites[i].name %>
+                            </h4>
+                            <div>
+                                <%= diveSites[i].description %>
+                            </div>
+                            <div class="released-date">
+                                Distance from pin: <%= diveSites[i].distance %> nautical miles
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <% } %>
+                <div class=buttons>
+                        <a class="btn btn-primary" href="/">Back</a>
+                </div>
+         </div>
+
+
+    </body>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5YU9u8D8LQoHXqPDWO_FQD4QQ3ebEiTo&callback=initMap">
+    </script>
+    <script type="text/javascript">
+        let data = <%- dive %>;
+        <%# pushing anything in " " into an individual array %>
+        let result = [];
+        for (let i = 0; i < data.length; i++){
+            let currentData = data[i].split(',');
+            for(let n = 1; n < 4; n++){
+                currentData[n] = parseFloat(currentData[n]);
+            }
+            result.push(currentData);
+        }
+        console.log(result)
+
+        var lati = <%=coordinateY%>; 
+        var long = <%=coordinateX%>;
+    </script>
+    <script type="text/javascript" src="../../searchapp.js"></script>
+    
+</html>

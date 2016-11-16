@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            <%= diveList.name %>
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles.css">        
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="dive-details">
+                <h1 class="text-center"><%= diveList.name %></h1>
+                <div class="row">
+                    <div class="col-xs-5">
+                        <img class="dive-poster" id="posters" src="<%= diveList.poster %> "/>
+                    </div>
+                    <div class="col-xs-7">
+                        <table class="table">
+                            <%for (var key in diveList) {%>
+                            <% if (key !== 'id' && key !== 'poster'){ %>
+                            <tr>
+                                <td><%= key  %></td>
+                                <td><%= diveList[key] %></td>
+                            </tr>
+                            <% } %>
+                            <% } %>
+                        </table>
+                    </div>    
+                </div>
+
+                <div class="row">
+                    <div class=buttons>
+                        <a class="btn btn-primary" href="/">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
